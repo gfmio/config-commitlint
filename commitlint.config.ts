@@ -275,6 +275,15 @@ export default {
       MIN_HEADER_LENGTH,
     ],
 
+    /**
+     * Header must not have leading or trailing whitespace
+     * Severity: Error (2)
+     */
+    'header-trim': [
+      2,
+      'always',
+    ],
+
     // ===========================
     // References & Mentions
     // ===========================
