@@ -61,7 +61,7 @@ This configuration enforces Conventional Commits with opinionated defaults desig
 
 ### Commit Message Format
 
-```
+```text
 <type>(<scope>): <subject>
 
 <body>
@@ -70,7 +70,8 @@ This configuration enforces Conventional Commits with opinionated defaults desig
 ```
 
 **Example:**
-```
+
+```text
 feat(api): add user authentication endpoint
 
 Implement JWT-based authentication with refresh tokens.
@@ -82,6 +83,7 @@ Closes #123
 ### Type Enforcement
 
 **Allowed types** (strictly enforced):
+
 - `feat`: New features
 - `fix`: Bug fixes
 - `docs`: Documentation changes
@@ -97,6 +99,7 @@ Closes #123
 ### Scope Guidelines
 
 **Recommended scopes** (warning if missing):
+
 - `config`: Configuration file changes
 - `deps`: Dependency updates
 - `ci`: CI/CD pipeline changes
@@ -107,19 +110,22 @@ Closes #123
 ### Subject Line Rules
 
 **Strictly enforced:**
+
 - Must not start with uppercase (except proper nouns)
 - Must not use PascalCase
 - Should be concise and descriptive
 
 **Good examples:**
-```
+
+```text
 feat(api): add rate limiting middleware
 fix(auth): resolve token expiration edge case
 docs(readme): update installation instructions
 ```
 
 **Bad examples:**
-```
+
+```text
 feat(api): Add rate limiting middleware  ❌ (uppercase 'Add')
 fix(auth): ResolveTokenIssue  ❌ (PascalCase)
 Feat(api): add feature  ❌ (uppercase type)
@@ -330,7 +336,7 @@ Conventional Commits provide:
 
 Indicate breaking changes with `!` or `BREAKING CHANGE:` in footer:
 
-```
+```text
 feat(api)!: change authentication response format
 
 BREAKING CHANGE: The auth endpoint now returns { token, user } instead of just the token string.
@@ -340,7 +346,7 @@ BREAKING CHANGE: The auth endpoint now returns { token, user } instead of just t
 
 Choose the primary scope or use a general one:
 
-```
+```text
 refactor(api,web): standardize error handling
 ```
 
@@ -348,7 +354,7 @@ refactor(api,web): standardize error handling
 
 Use the footer to reference issues:
 
-```
+```text
 fix(auth): resolve session timeout bug
 
 The session was expiring too early due to incorrect timestamp comparison.
@@ -361,7 +367,7 @@ Relates to #456
 
 For WIP commits during feature development:
 
-```
+```text
 feat(api): add user endpoint (WIP)
 
 chore: temporary debug logging
@@ -431,12 +437,15 @@ npx commitlint --print-config
 ### Common Errors
 
 **Error: "subject may not be empty"**
+
 - Ensure your commit message has a subject after the type and scope
 
 **Error: "type must be one of [feat, fix, ...]"**
+
 - Use only allowed types or extend `type-enum` rule
 
 **Error: "scope must be one of [...]"**
+
 - Either add a valid scope or override `scope-enum` in your config
 
 ## Migration from Other Conventions
