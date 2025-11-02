@@ -142,6 +142,10 @@ export default {
   },
 
   rules: {
+    // ===========================
+    // Body Validation
+    // ===========================
+
     /**
      * Body case - no restriction
      * Severity: Disabled (0)
@@ -157,10 +161,6 @@ export default {
     'body-empty': [
       0,
     ],
-
-    // ===========================
-    // Body Validation
-    // ===========================
 
     /**
      * Body must have blank line after header
@@ -199,6 +199,10 @@ export default {
       0,
     ],
 
+    // ===========================
+    // Footer Validation
+    // ===========================
+
     /**
      * Footer is optional
      * Severity: Disabled (0)
@@ -206,10 +210,6 @@ export default {
     'footer-empty': [
       0,
     ],
-
-    // ===========================
-    // Footer Validation
-    // ===========================
 
     /**
      * Footer must have blank line before it
@@ -238,6 +238,10 @@ export default {
       0,
     ],
 
+    // ===========================
+    // Header Validation
+    // ===========================
+
     /**
      * Ensure header uses proper case
      * Severity: Error (2)
@@ -257,10 +261,6 @@ export default {
       'never',
       '.',
     ],
-
-    // ===========================
-    // Header Validation
-    // ===========================
 
     /**
      * Entire header (type + scope + subject) max length
@@ -355,6 +355,10 @@ export default {
       0,
     ],
 
+    // ===========================
+    // Subject Validation
+    // ===========================
+
     /**
      * Prevent uppercase first letter and PascalCase in subject
      * Allows sentence-case for proper nouns (e.g., "fix: update React to v18")
@@ -368,10 +372,6 @@ export default {
         'pascal-case',
       ],
     ],
-
-    // ===========================
-    // Subject Validation
-    // ===========================
 
     /**
      * Subject must not be empty
@@ -428,6 +428,10 @@ export default {
       0,
     ],
 
+    // ===========================
+    // Type Validation
+    // ===========================
+
     /**
      * Ensure type is in lowercase
      * Severity: Error (2)
@@ -446,9 +450,6 @@ export default {
       2,
       'never',
     ],
-    // ===========================
-    // Type Validation
-    // ===========================
 
     /**
      * Restrict commit types to standard Conventional Commits types
