@@ -476,7 +476,9 @@ Review your current types and map them to conventional types, or extend `type-en
 
 ## Author
 
-Frédérique Mittelstaedt ([npm@gfm.io](mailto:npm@gfm.io))
+Frédérique Mittelstaedt
+
+- GitHub: [@gfmio](https://github.com/gfmio)
 
 ## Contributing
 
