@@ -366,12 +366,12 @@ export default {
     ],
 
     /**
-     * Subject should not have leading/trailing whitespace
-     * Severity: Error (2)
+     * Allow exclamation mark for breaking changes (e.g., "feat!: breaking change")
+     * Disabled (0) to permit conventional commits breaking change syntax
      */
     'subject-exclamation-mark': [
       0,
-    ], // Allow ! for breaking changes
+    ],
 
     /**
      * Subject must not end with a period
