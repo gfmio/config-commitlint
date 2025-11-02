@@ -12,7 +12,8 @@
     "@biomejs/biome": "^2.3.2",
     "@commitlint/cli": "^20.1.0",
     "@commitlint/config-conventional": "^20.0.0",
-    "@gfmio/config-biome": "^1.0.2"
+    "@gfmio/config-biome": "^1.0.2",
+    "@ngx-devs/commitlint-plugin-imperative": "^1.1.4"
   },
   "exports": {
     "./commitlint.config.ts": "./commitlint.config.ts"
@@ -31,7 +32,8 @@
   "name": "@gfmio/config-commitlint",
   "peerDependencies": {
     "@commitlint/cli": "^20.1.0",
-    "@commitlint/config-conventional": "^20.0.0"
+    "@commitlint/config-conventional": "^20.0.0",
+    "@ngx-devs/commitlint-plugin-imperative": "^1.1.4"
   },
   "repository": {
     "type": "git",

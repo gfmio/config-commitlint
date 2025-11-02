@@ -26,6 +26,13 @@ export default {
   helpUrl: 'https://github.com/gfmio/config-commitlint#usage',
 
   /**
+   * Plugins extend commitlint with additional rules
+   */
+  plugins: [
+    '@ngx-devs/commitlint-plugin-imperative',
+  ],
+
+  /**
    * Custom prompt configuration (for use with @commitlint/cz-commitlint)
    */
   prompt: {
@@ -280,6 +287,16 @@ export default {
      * Severity: Error (2)
      */
     'header-trim': [
+      2,
+      'always',
+    ],
+
+    /**
+     * Subject must use imperative mood (e.g., "Add feature" not "Added feature" or "Adding feature")
+     * Severity: Error (2)
+     * This ensures commits follow best practice: "If applied, this commit will <subject>"
+     */
+    'imperative-rule/en': [
       2,
       'always',
     ],

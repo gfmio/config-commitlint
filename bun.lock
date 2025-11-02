@@ -11,10 +11,12 @@
         "@commitlint/cli": "^20.1.0",
         "@commitlint/config-conventional": "^20.0.0",
         "@gfmio/config-biome": "^1.0.2",
+        "@ngx-devs/commitlint-plugin-imperative": "^1.1.4",
       },
       "peerDependencies": {
         "@commitlint/cli": "^20.1.0",
         "@commitlint/config-conventional": "^20.0.0",
+        "@ngx-devs/commitlint-plugin-imperative": "^1.1.4",
       },
     },
   },
@@ -76,6 +78,8 @@
     "@commitlint/types": ["@commitlint/types@20.0.0", "", { "dependencies": { "@types/conventional-commits-parser": "^5.0.0", "chalk": "^5.3.0" } }, "sha512-bVUNBqG6aznYcYjTjnc3+Cat/iBgbgpflxbIBTnsHTX0YVpnmINPEkSRWymT2Q8aSH3Y7aKnEbunilkYe8TybA=="],
 
     "@gfmio/config-biome": ["@gfmio/config-biome@1.0.2", "", { "peerDependencies": { "@biomejs/biome": "^2.3.0" } }, "sha512-rFG0Pt/T1r3d38Cdshhq4uSeanych74ko+1TfutSFXJINQLugD21hes8pkvzF8QI1fr47JIkXC0i54+CnuLrGg=="],
+
+    "@ngx-devs/commitlint-plugin-imperative": ["@ngx-devs/commitlint-plugin-imperative@1.1.4", "", { "peerDependencies": { "@commitlint/lint": ">=7.6.0" } }, "sha512-HktFA+kg0fEWc6eLhNUDgN1gZnDsKxUyiKD+tv5QQyw2LhKdIdi5RLdITdtIse9rFHhDycPff+mxAFSEHigZ6A=="],
 
     "@types/conventional-commits-parser": ["@types/conventional-commits-parser@5.0.2", "", { "dependencies": { "@types/node": "*" } }, "sha512-BgT2szDXnVypgpNxOK8aL5SGjUdaQbC++WZNjF1Qge3Og2+zhHj+RWhmehLhYyvQwqAmvezruVfOf8+3m74W+g=="],
 

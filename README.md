@@ -5,19 +5,19 @@ Shared [commitlint](https://commitlint.js.org/) configuration for enforcing cons
 ## Installation
 
 ```bash
-npm install --save-dev @gfmio/config-commitlint @commitlint/cli @commitlint/config-conventional
+npm install --save-dev @gfmio/config-commitlint @commitlint/cli @commitlint/config-conventional @ngx-devs/commitlint-plugin-imperative
 ```
 
 ```bash
-yarn add --dev @gfmio/config-commitlint @commitlint/cli @commitlint/config-conventional
+yarn add --dev @gfmio/config-commitlint @commitlint/cli @commitlint/config-conventional @ngx-devs/commitlint-plugin-imperative
 ```
 
 ```bash
-pnpm add --save-dev @gfmio/config-commitlint @commitlint/cli @commitlint/config-conventional
+pnpm add --save-dev @gfmio/config-commitlint @commitlint/cli @commitlint/config-conventional @ngx-devs/commitlint-plugin-imperative
 ```
 
 ```bash
-bun add --dev @gfmio/config-commitlint @commitlint/cli @commitlint/config-conventional
+bun add --dev @gfmio/config-commitlint @commitlint/cli @commitlint/config-conventional @ngx-devs/commitlint-plugin-imperative
 ```
 
 ## Usage
