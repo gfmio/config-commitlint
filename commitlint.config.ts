@@ -165,8 +165,9 @@ export default {
     ],
 
     /**
-     * Body should use imperative mood (disabled - too opinionated)
+     * Body maximum total length - disabled (optional)
      * Severity: Disabled (0)
+     * Note: Use body-max-line-length to limit line length instead
      */
     'body-max-length': [
       0,
