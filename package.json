@@ -18,8 +18,8 @@
   },
   "exports": {
     "./commitlint.config.js": {
-      "types": "./dist/commitlint.config.d.ts",
-      "default": "./dist/commitlint.config.js"
+      "default": "./dist/commitlint.config.js",
+      "types": "./dist/commitlint.config.d.ts"
     }
   },
   "files": [
