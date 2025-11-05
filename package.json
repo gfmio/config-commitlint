@@ -13,13 +13,16 @@
     "@commitlint/cli": "^20.1.0",
     "@commitlint/config-conventional": "^20.0.0",
     "@gfmio/config-biome": "^1.0.2",
-    "@ngx-devs/commitlint-plugin-imperative": "^1.1.4"
+    "@ngx-devs/commitlint-plugin-imperative": "^1.1.4",
+    "typescript": "^5.9.3"
   },
   "exports": {
-    "./commitlint.config.ts": "./commitlint.config.ts"
+    "./commitlint.config.d.ts": "./dist/commitlint.config.d.ts",
+    "./commitlint.config.js": "./dist/commitlint.config.js"
   },
   "files": [
-    "commitlint.config.ts",
+    "dist/commitlint.config.js",
+    "dist/commitlint.config.d.ts",
     "README.md",
     "LICENSE"
   ],

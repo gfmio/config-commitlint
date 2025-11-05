@@ -12,6 +12,7 @@
         "@commitlint/config-conventional": "^20.0.0",
         "@gfmio/config-biome": "^1.0.2",
         "@ngx-devs/commitlint-plugin-imperative": "^1.1.4",
+        "typescript": "^5.9.3",
       },
       "peerDependencies": {
         "@commitlint/cli": "^20.1.0",
