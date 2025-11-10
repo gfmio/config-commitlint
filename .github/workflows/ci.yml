@@ -37,15 +37,18 @@ jobs:
       - name: Run Biome check
         run: bunx @biomejs/biome ci .
 
+      - name: Build
+        run: bunx tsc
+
       - name: Lint PR title
         if: github.event_name == 'pull_request'
-        run: echo "$PR_TITLE" | bunx commitlint --config commitlint.config.ts --verbose
+        run: echo "$PR_TITLE" | bunx commitlint --config dist/commitlint.config.js --verbose
         env:
           PR_TITLE: ${{ github.event.pull_request.title }}
 
       - name: Lint current commit
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        run: bunx commitlint --config commitlint.config.ts --from HEAD~1 --to HEAD --verbose
+        run: bunx commitlint --config dist/commitlint.config.js --from HEAD~1 --to HEAD --verbose
 
   release-please:
     name: Release Please
@@ -92,6 +95,9 @@ jobs:
 
       - name: Install dependencies
         run: bun install --frozen-lockfile
+
+      - name: Build
+        run: bunx tsc
 
       - name: Setup Node.js for NPM
         uses: actions/setup-node@v4
